@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D911B5BC24FFBD0000B33557 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911B5BB24FFBD0000B33557 /* SettingView.swift */; };
+		D911B5BE24FFBF1B00B33557 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911B5BD24FFBF1B00B33557 /* CalculatorView.swift */; };
+		D911B5C024FFC1C300B33557 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911B5BF24FFC1C300B33557 /* ResultView.swift */; };
 		D9A6689324FD0FEA001250F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A6689224FD0FEA001250F1 /* AppDelegate.swift */; };
 		D9A6689524FD0FEA001250F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A6689424FD0FEA001250F1 /* SceneDelegate.swift */; };
 		D9A6689724FD0FEA001250F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A6689624FD0FEA001250F1 /* ContentView.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D911B5BB24FFBD0000B33557 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		D911B5BD24FFBF1B00B33557 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		D911B5BF24FFC1C300B33557 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		D9A6688F24FD0FEA001250F1 /* Monsly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monsly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A6689224FD0FEA001250F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9A6689424FD0FEA001250F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				D9A6689224FD0FEA001250F1 /* AppDelegate.swift */,
 				D9A6689424FD0FEA001250F1 /* SceneDelegate.swift */,
 				D9A6689624FD0FEA001250F1 /* ContentView.swift */,
+				D911B5BD24FFBF1B00B33557 /* CalculatorView.swift */,
+				D911B5BF24FFC1C300B33557 /* ResultView.swift */,
+				D911B5BB24FFBD0000B33557 /* SettingView.swift */,
 				D9A6689824FD0FEC001250F1 /* Assets.xcassets */,
 				D9A6689D24FD0FEC001250F1 /* LaunchScreen.storyboard */,
 				D9A668A024FD0FEC001250F1 /* Info.plist */,
@@ -147,8 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9A6689324FD0FEA001250F1 /* AppDelegate.swift in Sources */,
+				D911B5BE24FFBF1B00B33557 /* CalculatorView.swift in Sources */,
+				D911B5BC24FFBD0000B33557 /* SettingView.swift in Sources */,
 				D9A6689524FD0FEA001250F1 /* SceneDelegate.swift in Sources */,
 				D9A6689724FD0FEA001250F1 /* ContentView.swift in Sources */,
+				D911B5C024FFC1C300B33557 /* ResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
