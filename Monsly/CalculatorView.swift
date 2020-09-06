@@ -14,7 +14,7 @@ struct CalculatorView: View {
   @State private var management_amount: Double = 0
   
   @State private var is_loan: Bool = false
-  @State private var loan_interest_rate: Double = 0.00
+  @State private var loan_interest_rate: Double = 0
   @State private var loan_amount: Double = 0
   
   var body: some View {
@@ -95,7 +95,17 @@ struct CalculatorView: View {
         Toggle(isOn: $is_loan) {
           Text("전세금 대출")
         }
-        if is_loan == true {
+        .onTapGesture {
+          if self.is_loan {
+            self.loan_amount = 0
+            self.loan_interest_rate = 0
+          } else {
+            if self.deposit_amount == 0 {
+              self.loan_amount = 1
+            }
+          }
+        }
+        if is_loan {
           VStack(alignment: .leading) {
             HStack {
               Text("대출금")
@@ -109,7 +119,7 @@ struct CalculatorView: View {
                 Image(systemName: "minus.square")
                   .foregroundColor(.gray)
               })
-              Slider(value: $loan_amount, in: 0...deposit_amount, step: 100)
+              Slider(value: $loan_amount, in: 0...deposit_amount + 100, step: 100)
               Button(action: {
                 self.loan_amount += 100
               }, label: {

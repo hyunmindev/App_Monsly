@@ -18,13 +18,6 @@ struct ResultView: View {
   var deposit_interest_rate: Double = 0.0175
   var loan_interest_rate: Double = 0
   
-  var real_laon_amount: Double {
-    if is_loan {
-      return loan_amount
-    } else {
-      return 0
-    }
-  }
   var deposit_interest: Double {
     (deposit_amount - loan_amount) * deposit_interest_rate
   }
@@ -52,6 +45,11 @@ struct ResultView: View {
           Text("월세")
           Spacer()
           Text("\(rent_amount, specifier: "%0.f") 만원")
+        }
+        HStack {
+          Text("관리비")
+          Spacer()
+          Text("\(management_amount, specifier: "%0.f") 만원")
         }
         if is_loan == true {
           HStack {
@@ -103,7 +101,12 @@ struct ResultView: View {
         HStack {
           Text("월")
           Spacer()
-          Text("\(consumption_amount, specifier: "%0.f") 만원")
+          Text("\(consumption_amount, specifier: "%0.2f") 만원")
+        }
+        HStack {
+          Text("년")
+          Spacer()
+          Text("\(consumption_amount * 12, specifier: "%0.2f") 만원")
         }
       }
     }
